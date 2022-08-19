@@ -87,6 +87,8 @@ From the terminal do the following:
 - In Terminal, enter ```python -m ipykernel install --user --name PythonData```
 - The instructions state that ```Installed kernelspec PythonData in \Users\<your computer name>\AppData\Roaming\jupyter\kernels\PythonData``` should be printed to the terminal, however, it actually installed PythonData in ```/Users/<your computer name>/Library/Jupyter/kernels/PythonData```
 - If Chrome is not the default browser, enter ```jupyter notebook --browser chrome``` to open the Jupyter notebook in Chrome.
+- Add .ipynb_checkpoints to .gitignore
+
      
 ### Footnotes:
 [^1]: See video for this module to see the output from these steps
