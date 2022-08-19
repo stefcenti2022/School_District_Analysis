@@ -8,4 +8,10 @@
 ###########################
 # Distribution / packaging
 ###########################
-.Python
+Python
+
+
+###########################
+# Juniper Notebook Files
+###########################
+.ipynb_checkpoints
