@@ -84,7 +84,7 @@ From the terminal do the following:
 ### Working in Git
 Note that work will now be done in the web interface and the CLI.  Whenever work is done in both locations there will be a conflict.  To avoid the conflict, only work in one at a time.
 
-If changing the readme file in the UI, once committed, go to the terminal and enter ```git pull`` before modifying any files or updating the branch on the command line.
+If changing the readme file in the UI, once committed, go to the terminal and enter ```git pull``` before modifying any files or updating the branch on the command line.
 
 Similarly, after changing the .gitignore from the CLI, commit and push to git before making changes from the UI.
 
