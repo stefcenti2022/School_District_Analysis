@@ -81,6 +81,17 @@ From the terminal do the following:
 - If prompted, enter username and password for GitHub[^3]
 - Once the repo has been cloned, there should be a folder with the same name as the repo
 
+### Working in Git
+Note that work will now be done in the web interface and the CLI.  Whenever work is done in both locations there will be a conflict.  To avoid the conflict, only work in one at a time.
+
+If changing the readme file in the UI, once committed, go to the terminal and enter ```git pull`` before modifying any files or updating the branch on the command line.
+
+Similarly, after changing the .gitignore from the CLI, commit and push to git before making changes from the UI.
+
+Following this practice will keep git on the local computer in sync with git at github.com
+
+If they do get out of sync, make sure the one on git is up to date and copy the current repo in the local folder to repo_1.  Clone the repo from git onto the local folder and make any updates using files in repo_1.
+
 ## 4.3.1 Starting Jupyter Notebook Server
 
 ### Add Dev Env to Jupyter Notebook
