@@ -7,7 +7,7 @@
    - Allows you to create docs conteaing live code useing languages such as Python.
    - It is to Anaconda what MS Word is to MS Office
  - Mac Installation Notes: 
-   - check installatioin with conda --version
+   - check installatioin with ```conda --version```
    - conda is the package mangement system for Anaconda
    - If conda version is < 4.8 v. run: ```conda update conda```
       - Enter ```y``` when prompted
@@ -53,7 +53,20 @@
     - Init with a Readme
     - Add .gitignore and type "Python"
     - Create Repo
-  - Before cloning add ".DS_Store" to .gitignore to protect info to your computer.
+  - Before cloning, add ".DS_Store" to .gitignore to protect info to your computer.
+  - Follow these steps fromt the CLI for any repos cloned before .gitignore was modified to ignore .DS_Store:
+      - Create a .gitignore file in the directory of the repo
+      - Add ".DS_Store" to .gitignore and save using a text editor such as vi or nano
+      - Remove the .DS_Store file from the repo and update it from the CLI as follows:
+        ```
+        $ find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+        $ git status
+        $ git add .gitignore
+        $ git commit -m 'Removes all .DS_Store files from repo and ignores them going forward.'
+        $ git push
+        ```
+         
+     
   
 ### Footnotes:
 [^1]: See video for this module to see the output from these steps
