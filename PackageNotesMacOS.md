@@ -89,6 +89,13 @@ From the terminal do the following:
 - If Chrome is not the default browser, enter ```jupyter notebook --browser chrome``` to open the Jupyter notebook in Chrome.
 - Add .ipynb_checkpoints to .gitignore
 
+### Starting the Server (once configured)
+Once conda and jupyter are fully configured, follow these steps to start up from a new terminal session:
+- Launch Terminal if needed.
+- Navigate to the repo to work on
+- Activate the PythonData env as shown above: ```conda activate PythonData```
+- Launch Jupyter Notebook: ```jupyter notebook```
+
      
 ### Footnotes:
 [^1]: See video for this module to see the output from these steps
