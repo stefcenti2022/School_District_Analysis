@@ -16,3 +16,17 @@ Here is the list of deliverables for the analysis of the school district:
    - School performance based on the school size 
    - School performance based on the type of school
 
+The input file containing a complete list of school will be in the following format:
+- School ID: This is a unique integer identifying each school in the district.
+- school_name: The name of the high school in text formatted printable string.
+- type: String indictating whether the school is a "District" or "Charter" school.
+- size: integer indicting the total number of students in the school.
+- budget: long integer indicating the school's budget fot the year the students were tested.
+
+THe snippet below shows the heading and first few rows of data:
+
+(TODO: change this link to point to an image in the assets folder.)
+<img width="399" alt="image" src="https://user-images.githubusercontent.com/110138522/185729706-d6cd514d-6468-4f0d-adc4-f816d4ff0e30.png">
+
+
+
