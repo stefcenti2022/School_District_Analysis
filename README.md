@@ -79,7 +79,7 @@ The following image shows a sample of the dataset used for the district summary.
 
 The District Summary reported previously is shown in the image below. This image shows the analysis before taking the 9th grade scores from THS out of the dataset:
 
-<img src="./Resources/district_summary_before.jpeg" alt="District Summary" width="600"/>
+<img src="./Resources/ddistrict_summary_before.jpeg" alt="District Summary" width="600"/>
 
 This table shows the key metrics for the District Summary based on the dataset shown above:
 
