@@ -103,8 +103,8 @@ The following image shows all the schools in the district and how they performed
 
 TODO: Describe key metrics at detail level.
 
-<img src="./Resources/school_before.jpeg" alt="School Summary" width="600"/>
-<img src="./Resources/school_after.jpeg" alt="School Summary" width="600"/>
+<img src="./Resources/school_summary_before.jpeg" alt="School Summary" width="600"/>
+<img src="./Resources/school_summary_after.jpeg" alt="School Summary" width="600"/>
 
 - An overview of the key metrics for each school, presented in a table format
 - Tables presenting each of the following metrics:
