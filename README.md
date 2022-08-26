@@ -103,8 +103,8 @@ The following image shows all the schools in the district and how they performed
 <img src="./Resources/school_summary.jpeg" alt="School Summary" width="600"/>
 
 
-<img src="./Resources/THS_school_summary_before.jpeg" alt="School Summary" width="600"/>
-<img src="./Resources/THS_school_summary_after.jpeg" alt="School Summary" width="600"/>
+<img src="./Resources/THS_school_summary_before.jpeg" alt="THS Before" width="600"/>
+<img src="./Resources/THS_school_summary_after.jpeg" alt="THS After" width="600"/>
 
 - Tables presenting each of the following metrics:
    - Top 5 and bottom 5 performing schools, based on the overall passing rate
