@@ -1,10 +1,21 @@
 # Analysis of Standardized Test Scores for the PyCity School District
-This project contains tools to help with the analysis of standardized test data for the PyCity School District.
+This project uses a Jupyter Notebook that contains code and results for this analysis. There are 2 notebooks of interest in the repository for this project.
 
-This report contains the analyis for the current school year.
+PyCitySchools.ipynb contains the original data used to determine the performance of the schools in the PyCity School district.  Later it was suspected that the 9th grade scores at Thomas High School may have been tampered with which would have affected the original analysis. The code from this report has been refactored and is now superceded by the PyCityChallenge.inpynb file.
+
+PyCityChallenge.ipynb is the latest report based on all scores except the 9th grade scores from Thomas High School.
+
+The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  
+The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this partiulcar school year.
 
 ## Overview of Analysis
-Here is the list of deliverables for the analysis of the school district: 
+This report contains the following information in 2 parts:
+
+### Part 1:
+Replaces the reading an math scores for the 9th graders at Thomas High School and shows a summary of these results.
+
+### Part 2:
+Repeats the school district analysis and contains the following information:
 
 - A high-level snapshot of the district's key metrics, presented in a table format
 - An overview of the key metrics for each school, presented in a table format
@@ -16,53 +27,38 @@ Here is the list of deliverables for the analysis of the school district:
    - School performance based on the school size 
    - School performance based on the type of school
 
-## Input Data
-The input file containing a complete list of school will be in the following format:
-- School ID: This is a unique integer identifying each school in the district.
-- school_name: The name of the high school in text formatted printable string.
-- type: String indictating whether the school is a "District" or "Charter" school.
-- size: integer indicting the total number of students in the school.
-- budget: long integer indicating the school's budget fot the year the students were tested.
+## Resources
+The following CSV files were used as input to this analysis. If modifications were needed they are indicated here:
+- schools_complete.csv: This file contains a complete list of school will be in the following format:
+   - School ID: This is a unique integer identifying each school in the district.
+   - school_name: The name of the high school in text formatted printable string.
+   - type: String indictating whether the school is a "District" or "Charter" school.
+   - size: integer indicting the total number of students in the school.
+   - budget: long integer indicating the school's budget fot the year the students were tested.
+- students_complete.csv: This file contains a complete list of the student data for the entire district and is in the following format:
+   - Student ID: District-wide unique integer used to identify each student enrolled in the district.
+   - student_name: Name of the student.  Some names are not in the proper format and were re-formatted to ensure the names were valid.
+   - gender: gender of the student
+   - grade: A string representation of the grade level of the student.
+   - school_name: A string representing the name of the school the student is enrolled in.
+   - reading_score: integer representation of the student's reading score achieved on the standardized test results being analyzed.
+   - math_score: integer representation of the student's math score achieved on the standardized test results being analyzed.
 
-THe snippet below shows the heading and first few rows of data:
+## Input Data Cleanup
+Before performing a new analysis of the data, the data contained in the students_complete.csv file needed to be cleaned up to fix any student names with suffixes or prefixes and to replace the math and reading scores for every student in Thomas High School with the value 'NaN' or 'not a number'.  This replacement will tell the notebook to ignore any rows that contain a value of 'NaN' when used in any math calculations.
 
-(TODO: change this link to point to an image in the assets folder.)
-<img width="399" alt="image" src="https://user-images.githubusercontent.com/110138522/185729706-d6cd514d-6468-4f0d-adc4-f816d4ff0e30.png">
+### Removal of Prefixes and Suffixes
+These 2 images shows a before and after snapshot of the names that were changed. In particular, notice that "Dr. xyz" was modified to simply "xyz".
 
-### Verify Data Results
-Before running the analysis tools on the input files, the data was inspected for anomolies such as missing data values, missing rows, incorrect data types, etc. 
+Before cleaning:
 
-First, the number of rows were calculated as follows:
-- School Data has 15 rows
-- Student Data has 9.999 rows TODO: find real value
 
-Next, both input files were verified. To check for missing data, several methods are available in Jupyter. For this analyis, checking for null data and summing the count was used since the student data has thousands of rows and this was more concise. The following images show the results from this inspection:
+After cleaning:
+<img src="./Resources/after_names_cleaned.png" alt="names after cleaning" width="600"/>
 
-TODO: add image of the following results:
-- sum of null school values
-- sum of null student values 
 
-After verifying the School and Student data files did not have any missing values, the file of grades for each student was verified.
-
-TODO: insert image of NaN vales found in the grades data file
-
-As shown above, it turned out that there were a couple of N/A values that needed to be addressed.  Three different options were considered for dealing with this issue.
-#### Option 1: Do Nothing
-Leaving N/A values will be skipped during calls to sum or average the data, howver, if multiplicaton or division with a NaN value may cause problems if the answer is required elsewhere in the code.
-#### Option 2: Drop the Row
-Dropping the row for a NaN value will also remove any other useful data that is contained in that row which could pose a problem later in the code. Before going this route these questions must be answered for every dataset:
-   1. How much data would be removed if NaNs are dropped?
-   2. How would this impact the analysis?
-#### Option 3: Fill in the Row
-Choose an appropriate value to be filled in place of every NaN value encountered. If this route is chosen, the values inserted must be carefully be considered for every analysis performed later.
-
-For this analysis, the fillna() method was used to fill in rows with NaN values.
-
-Next, the data types of the values were verified that they made sense for any analysis that were the data will be needed later. The dtypes attribute of the Pandas DataFrame was used to verify data types.
-
-TODO: add images of school and student column data types.
-
-As shown in the image above, all fields such as scores and budget have integer data types which is correct so no changes were needed based on data type.
+### Replacement of Reading and Math Scores:
+The following image shows a snapshot of how the 9th graders have 'Nan' values for their math and reading scores while the rest of the students have the original scores read in from the input file:
 
 
 
