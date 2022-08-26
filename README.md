@@ -77,9 +77,13 @@ The following image shows a sample of the dataset used for the district summary.
 
 <img src="./Resources/district_data_sample.jpeg" alt="District Data Sample" width="600"/>
 
+The District Summary reported previously is shown in the image below. This image shows the analysis before taking the 9th grade scores from THS out of the dataset:
+
+<img src="./Resources/district_summary_before.jpeg" alt="District Summary" width="600"/>
+
 This table shows the key metrics for the District Summary based on the dataset shown above:
 
-<img src="./Resources/district_summary.jpeg" alt="District Summary" width="600"/>
+<img src="./Resources/district_summary_after.jpeg" alt="District Summary" width="600"/>
 
 Key metrics shown are as follows:
 - Total Schools: The total number of schools included in the analyis. For this particular analysis, every high school in the PyCity School District has been included for a total of 15 schools.
