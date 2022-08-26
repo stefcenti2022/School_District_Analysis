@@ -52,8 +52,11 @@ These 2 images shows a before and after snapshot of the names that were changed.
 
 Before cleaning:
 
+<img src="./Resources/before_names_cleaned.jpeg" alt="names before cleaning" width="600"/>
+
 
 After cleaning:
+
 <img src="./Resources/after_names_cleaned.jpeg" alt="names after cleaning" width="600"/>
 
 
