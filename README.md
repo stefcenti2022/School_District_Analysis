@@ -5,8 +5,7 @@ PyCitySchools.ipynb contains the original data used to determine the performance
 
 PyCityChallenge.ipynb is the latest report based on all scores except the 9th grade scores from Thomas High School.
 
-The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  
-The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this partiulcar school year.
+The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this partiulcar school year.
 
 ## Overview of Analysis
 This report contains the following information in 2 parts:
@@ -101,12 +100,12 @@ TODO: provide a deeper analyis of the difference between including and excluding
 ### Overview of Key Metrics by School
 The following image shows all the schools in the district and how they performed in relation to each other. Note the following metrics:
 
-TODO: Describe key metrics at detail level.
+<img src="./Resources/school_summary.jpeg" alt="School Summary" width="600"/>
 
-<img src="./Resources/school_summary_before.jpeg" alt="School Summary" width="600"/>
-<img src="./Resources/school_summary_after.jpeg" alt="School Summary" width="600"/>
 
-- An overview of the key metrics for each school, presented in a table format
+<img src="./Resources/THS_school_summary_before.jpeg" alt="School Summary" width="600"/>
+<img src="./Resources/THS_school_summary_after.jpeg" alt="School Summary" width="600"/>
+
 - Tables presenting each of the following metrics:
    - Top 5 and bottom 5 performing schools, based on the overall passing rate
    - The average math score received by students in each grade level at each school
