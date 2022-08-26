@@ -54,7 +54,7 @@ Before cleaning:
 
 
 After cleaning:
-<img src="./Resources/after_names_cleaned.png" alt="names after cleaning" width="600"/>
+<img src="./Resources/after_names_cleaned.jpeg" alt="names after cleaning" width="600"/>
 
 
 ### Replacement of Reading and Math Scores:
