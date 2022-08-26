@@ -48,7 +48,9 @@ The following CSV files were used as input to this analysis. If modifications we
 Before performing a new analysis of the data, the data contained in the students_complete.csv file needed to be cleaned up to fix any student names with suffixes or prefixes and to replace the math and reading scores for every student in Thomas High School with the value 'NaN' or 'not a number'.  This replacement will tell the notebook to ignore any rows that contain a value of 'NaN' when used in any math calculations.
 
 ### Removal of Prefixes and Suffixes
-These 2 images shows a before and after snapshot of the names that were changed. In particular, notice that "Dr. xyz" was modified to simply "xyz".
+These 2 images show a before and after snapshot of the names that were changed. In particular, notice that "Dr. Richard Scott" was modified to simply "Richard Scott". Also, the first file is a snapshot of the excel version of the csv file. The second is the data in the notebook after cleaning.
+
+The rest of this analysis will be referring to the data uploaded into the notebook for this project.
 
 Before cleaning:
 
@@ -61,7 +63,54 @@ After cleaning:
 
 
 ### Replacement of Reading and Math Scores:
-The following image shows a snapshot of how the 9th graders have 'Nan' values for their math and reading scores while the rest of the students have the original scores read in from the input file:
+The following image shows a snapshot of the 9th graders after replacing their math and reading scores with 'Nan' values while the rest of the students still have the original scores read in from the input file:
+
+<img src="./Resources/after_scores_replaced.jpeg" alt="NaN Scores" width="600"/>
+
+Notice how only the scores for 9th graders have been replaced.
+
+## School District Analysis
+This section contains the analysis of the PyCity School District for all standardized test taken for every school in the district. All calculations will be performed for every grade level in every school except for the 9th graders at Thomas High School (THS).
+
+### District Summary
+The following image shows a sample of the dataset used for the district summary. The table includes all the metrics for each school along with each student in those schools all in the same table. This table was used as the basis for all analysis performed in this report.
+
+<img src="./Resources/district_data_sample.jpeg" alt="District Data Sample" width="600"/>
+
+This table shows the key metrics for the District Summary based on the dataset shown above:
+
+<img src="./Resources/district_summary.jpeg" alt="District Summary" width="600"/>
+
+Key metrics shown are as follows:
+- Total Schools: The total number of schools included in the analyis. For this particular analysis, every high school in the PyCity School District has been included for a total of 15 schools.
+- Total Students: The total number of students in all the high schools the district. This number includes the 9th graders from THS.
+- Total Budget: The budget for all the high schools in the district.
+- Average Math Score: This is the average Math score of all the students in the district excluding the 9th graders from THS.
+- Average Reading Score: This is the average Reading score of all the students in the district excluding the 9th graders from THS.
+- % Passing Math: The % of all students that passed math with a score >= 70. This value excludes THS 9th graders.
+- % Passing Reading: The % of all students that passed reading with a score >= 70. This value excludes THS 9th graders.
+- % Overall Passing: The % of all high school students that passed both reading and math and excludes THS 9th graders.
+
+TODO: provide a deeper analyis of the difference between including and excluding THS 9th graders and possibly include an image including 9th graders.
+
+
+### Overview of Key Metrics by School
+The following image shows all the schools in the district and how they performed in relation to each other. Note the following metrics:
+
+TODO: Describe key metrics at detail level.
+
+<img src="./Resources/metrics_by_school.jpeg" alt="School Summary" width="600"/>
+
+- An overview of the key metrics for each school, presented in a table format
+- Tables presenting each of the following metrics:
+   - Top 5 and bottom 5 performing schools, based on the overall passing rate
+   - The average math score received by students in each grade level at each school
+   - The average reading score received by students in each grade level at each school
+   - School performance based on the budget per student
+   - School performance based on the school size 
+   - School performance based on the type of school
+
+
 
 
 
