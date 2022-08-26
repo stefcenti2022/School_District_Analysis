@@ -98,7 +98,16 @@ TODO: provide a deeper analyis of the difference between including and excluding
 
 
 ### Overview of Key Metrics by School
-The following image shows all the schools in the district and how they performed in relation to each other. Note the following metrics:
+The following table shows all the schools in the district and how they performed in relation to each other.
+- School Type: This column indicates indicates if the school is a District School or Charter. There can be distinct differences between these types of schools and in this table we can see that overall passing is more than 30% greater in charter vs. disrict schools.  The exception here being THS which is due to the scores of the 9th graders being removed while still using the total number of students to obtain this value. Previously, we saw how THS actaully performed taking out the number of 9th graders from the equation.
+- Total Students: This is the total number of 9th, 10th, 11th, and 12th graders in each school that were included in the data used for this analysis. Later we will see how school sizes affect performance but off-hand we can quickly see how high schools with more than 2K students perform much lower overall.
+- Total School Budget: This is the annual budget for each school in the district.
+- Per Student Budget: This is the average amount each school spends for each individual student in their high school.  This is a better indicator than the total budget since some larger schools that spend more per student may perform worse than a small school with a larger budget per student. We will look at this metric in greater detail later.
+- Average Math Score: This is the mean math score for all students in each school.
+- Average Reading Score: This is the mean of all reading scores for each school.
+- % Passing Math: This shows the percentage of the students in each school that passed the math portion of the standardized test. Any score >= 70 is considered passing.
+- % Passing Reading: This shows the percentage of the students in each school that passed the reading portion of the standardized test. Any score >= 70 is considered passing.
+- % Overall Passing: This shows the percentage of students in each school that passed both the reading and math portions of the test.
 
 <img src="./Resources/school_summary.jpeg" alt="School Summary" width="600"/>
 
