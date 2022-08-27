@@ -1,7 +1,7 @@
 # Analysis of Standardized Test Scores for the PyCity School District
 This project uses a Jupyter Notebook that contains code and results for this analysis. There are 2 notebooks of interest in the repository for this project.
 
-PyCitySchools.ipynb contains the original data used to determine the performance of the schools in the PyCity School district.  Later it was suspected that the 9th grade scores at Thomas High School may have been tampered with which would have affected the original analysis. The code from this report has been refactored and is now superceded by the PyCityChallenge.inpynb file.
+PyCitySchools.ipynb contains the original data used to determine the performance of the schools in the PyCity School district.  Later it was suspected that the 9th grade scores at Thomas High School may have been tampered with which would have affected the original analysis. The code from this report has been refactored and is now superceded by the PyCityChallenge.ipynb file.
 
 PyCityChallenge.ipynb is the latest report based on all scores except the 9th grade scores from Thomas High School.
 
@@ -11,7 +11,9 @@ The goal of this analysis is two-fold. For one, we want to find out if the grade
 This report contains the following information in 2 parts:
 
 ### Part 1:
-Replaces the reading an math scores for the 9th graders at Thomas High School and shows a summary of these results.
+- Cleans up the student names so they do not contain any prefixes or suffixes.
+
+- Replaces the reading an math scores for the 9th graders at Thomas High School with NaN values and shows a summary of these results.
 
 ### Part 2:
 Repeats the school district analysis and contains the following information:
@@ -44,12 +46,10 @@ The following CSV files were used as input to this analysis. If modifications we
    - math_score: integer representation of the student's math score achieved on the standardized test results being analyzed.
 
 ## Input Data Cleanup
-Before performing a new analysis of the data, the data contained in the students_complete.csv file needed to be cleaned up to fix any student names with suffixes or prefixes and to replace the math and reading scores for every student in Thomas High School with the value 'NaN' or 'not a number'.  This replacement will tell the notebook to ignore any rows that contain a value of 'NaN' when used in any math calculations.
+Before performing a new analysis of the data, the data contained in the students_complete.csv file needed to be cleaned up to fix any student names with suffixes or prefixes and to replace the math and reading scores for every student in Thomas High School with the value 'NaN' or 'not a number'.  This replacement will tell the prevent any rows that contain a value of 'NaN' from being used in any math calculations.
 
 ### Removal of Prefixes and Suffixes
-These 2 images show a before and after snapshot of the names that were changed. In particular, notice that "Dr. Richard Scott" was modified to simply "Richard Scott". Also, the first file is a snapshot of the excel version of the csv file. The second is the data in the notebook after cleaning.
-
-The rest of this analysis will be referring to the data uploaded into the notebook for this project.
+These 2 images show a before and after snapshot of the names that were changed. In particular, note that "Dr. Richard Scott" was modified to simply "Richard Scott". Also, the first file is a snapshot of the excel version of the csv file. The second is the data in the notebook after cleaning.
 
 Before cleaning:
 
@@ -60,27 +60,28 @@ After cleaning:
 
 <img src="./Resources/after_names_cleaned.jpeg" alt="names after cleaning" width="600"/>
 
+The rest of this analysis will be referring to the data uploaded into the notebook for this project.
 
 ### Replacement of Reading and Math Scores:
 The following image shows a snapshot of the 9th graders after replacing their math and reading scores with 'Nan' values while the rest of the students still have the original scores read in from the input file:
 
 <img src="./Resources/after_scores_replaced.jpeg" alt="NaN Scores" width="600"/>
 
-Notice how only the scores for 9th graders have been replaced.
+Note that only the scores for 9th graders have been replaced.
 
-## School District Analysis
-This section contains the analysis of the PyCity School District for all standardized test taken for every school in the district. All calculations will be performed for every grade level in every school except for the 9th graders at Thomas High School (THS).
+## Analysis Results
+This section contains the results of the analysis of the PyCity School District for the latest standardized tests taken for every school in the district. All calculations were performed for every grade level in every school except for the 9th graders at Thomas High School (THS).
 
-### District Summary
-The following image shows a sample of the dataset used for the district summary. The table includes all the metrics for each school along with each student in those schools all in the same table. This table was used as the basis for all analysis performed in this report.
+### District Results
+The following image shows a sample of the dataset used for the district. The table includes all the metrics for each school along with the metrics for each student in those schools all in one table. This table was used as the basis for all analysis performed in this report.
 
 <img src="./Resources/district_data_sample.jpeg" alt="District Data Sample" width="600"/>
 
-The District Summary reported previously is shown in the image below. This image shows the analysis before taking the 9th grade scores from THS out of the dataset:
+The District Summary reported during the first analyis is shown in the image below. The results shown here include the 9th grade scores from THS:
 
 <img src="./Resources/district_summary_before.jpeg" alt="District Summary" width="600"/>
 
-This table shows the key metrics for the District Summary based on the dataset shown above:
+This table shows the key metrics for the District Summary based on the sample dataset shown above:
 
 <img src="./Resources/district_summary_after.jpeg" alt="District Summary" width="600"/>
 
