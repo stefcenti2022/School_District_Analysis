@@ -84,7 +84,7 @@ This table shows the key metrics for the District Summary based on the dataset s
 
 <img src="./Resources/district_summary_after.jpeg" alt="District Summary" width="600"/>
 
-Key metrics shown are as follows:
+Key metrics covered in the district analysis:
 - Total Schools: The total number of schools included in the analyis. For this particular analysis, every high school in the PyCity School District has been included for a total of 15 schools.
 - Total Students: The total number of students in all the high schools the district. This number includes the 9th graders from THS.
 - Total Budget: The budget for all the high schools in the district.
