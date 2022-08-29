@@ -20,7 +20,7 @@ Repeats the school district analysis and compares the results to the new analysi
 - How was the school summary affected?
 - Thomas High School's performance relative to other schools
 - Analysis of the following metrics:
-   - Top 5 and bottom 5 performing schools, based on the overall passing rate
+   - High and Low Performing Schools
    - The average math score received by students in each grade level at each school
    - The average reading score received by students in each grade level at each school
    - School performance based on the budget per student
@@ -119,12 +119,16 @@ The following table shows all the schools in the district and how they performed
 - % Overall Passing: This shows the percentage of students in each school that passed both the reading and math portions of the test.
 
 ### Thomas High School's performance relative to other schools
-The next 2 images show the scores for THS as before the scores were removed and after. The table above and the THS scores in the images will be referenced in this section where were compare THS to the other schools and a few key metrics for all schools.
+The next 2 images show the scores for THS as before the scores were removed and after. The differences are as follows:
+- TODO: complete this section
 
+#### THS Scores Before
 <img src="./Resources/THS_summary_before.jpeg" alt="THS Before" width="600"/>
+
+#### THS Scores After
 <img src="./Resources/THS_summary_after.jpeg" alt="THS After" width="600"/>
 
-### Top 5 and bottom 5 performing schools, based on the overall passing rate
+### High and Low Performing Schools
 TODO: add images and analysis
 
 ### The average math score received by students in each grade level at each school
