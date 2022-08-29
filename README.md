@@ -5,7 +5,7 @@ PyCitySchools.ipynb contains the original data used to determine the performance
 
 PyCityChallenge.ipynb is the latest report based on all scores except the 9th grade scores from Thomas High School.
 
-The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this partiulcar school year.
+The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this particular school year.
 
 ## Overview of Analysis
 This report contains the following information in 2 parts:
@@ -35,9 +35,9 @@ The following CSV files were used as input to this analysis. If modifications we
 This file contains a complete list of school will be in the following format:
 - School ID: This is a unique integer identifying each school in the district.
 - school_name: The name of the high school in text formatted printable string.
-- type: String indictating whether the school is a "District" or "Charter" school.
-- size: integer indicting the total number of students in the school.
-- budget: long integer indicating the school's budget fot the year the students were tested.
+- type: String indicating whether the school is a "District" or "Charter" school.
+- size: integer indicating the total number of students in the school.
+- budget: long integer indicating the school's budget for the year the students were tested.
 
 ### students_complete.csv
 This file contains a complete list of the student data for the entire district and is in the following format:
@@ -55,16 +55,17 @@ Before performing a new analysis of the data, the data contained in the students
 ### Removal of Prefixes and Suffixes
 These 2 images show a before and after snapshot of the names that were changed. In particular, note that "Dr. Richard Scott" was modified to simply "Richard Scott". Also, the first file is a snapshot of the excel version of the csv file. The second is the data in the notebook after cleaning.
 
-Before cleaning:
+#### Before cleaning:
 
 <img src="./Resources/before_names_cleaned.jpeg" alt="names before cleaning" width="600"/>
 
-After cleaning:
+#### After cleaning:
 
 <img src="./Resources/after_names_cleaned.jpeg" alt="names after cleaning" width="600"/>
 
-### Replacement of Reading and Math Scores:
-After the csv files were uploaded into this notebook, the student data was modifield to replace the math and reading scores of all the 9th graders at Thomas High School (THS) with NaN values. 
+### Replacement of Reading and Math Scores
+After the csv files were uploaded into this notebook, the student data was modified to replace the math and reading scores of all the 9th graders at Thomas High School (THS) w
+ith NaN values. 
 
 The following image shows a snapshot of the 9th graders their math and reading scores replaced while the rest of the students still have the original scores read in from the input file:
 
@@ -88,7 +89,7 @@ This table shows the key metrics for the District Summary based on the sample da
 
 <img src="./Resources/district_summary_after.jpeg" alt="District Summary" width="600"/>
 
-#### Key metrics covered in the district analysis:
+#### Key metrics covered in the district analysis
 - Total Schools: The total number of schools included in the analyis. For this particular analysis, every high school in the PyCity School District has been included for a total of 15 schools.
 - Total Students: The total number of students in all the high schools the district. This number includes the 9th graders from THS.
 - Total Budget: The budget for all the high schools in the district.
@@ -98,27 +99,27 @@ This table shows the key metrics for the District Summary based on the sample da
 - % Passing Reading: The % of all students that passed reading with a score >= 70. This value excludes THS 9th graders. Originally, this value was 85.8. After removing the scores, the value was 85.7 for a slight decrease of 0.1%.
 - % Overall Passing: The % of all high school students that passed both reading and math excluding THS 9th graders. In the first analysis, this score was 65.2. For this recent analysis, the value wa 64.9 for a decrease of 0.3%.
 
-Overall, there was not a significant difference to the district summary as demonstrated above when comparing before and after scores side by side. This most likely is due to THS having a lower number of all the schools and that only the 9th grade scores were removed from the calculations.
+Overall, there was not a significant difference to the district summary as demonstrated above when comparing before and after scores side by side. This most likely is due to THS having a lower number of students out of all the schools and that only their 9th grade scores were removed from the calculations.
 
 ### Overview of Key Metrics by School
-Here we will delve into the differences between the individual schools when compared to THS and for each metric we will report on the observations based on several metrics such as school size, type and budget.
+Here we will delve into the differences between the individual schools when compared to THS. Observations based on several metrics such as school size, type and budget are described in this section.
 
 The following table shows all the schools in the district and how they performed in relation to each other:
 
 <img src="./Resources/school_summary.jpeg" alt="School Summary" width="600"/>
 
 #### Key Metrics Covered in the school analysis
-- School Type: This column indicates indicates if the school is a District School or Charter. There can be distinct differences between these types of schools and in this table we can see that overall passing is more than 30% greater in charter vs. disrict schools.  The exception here being THS which is due to the scores of the 9th graders being removed while still using the total number of students to obtain this value. Previously, we saw how THS actaully performed taking out the number of 9th graders from the equation.
+- School Type: This column indicates indicates if the school is a District School or Charter. There can be distinct differences between these types of schools and in this table we can see that overall passing is more than 30% greater in charter vs. disrict schools.  The exception here being THS which is due to the scores of the 9th graders being removed while still using the total number of students to obtain this value.
 - Total Students: This is the total number of 9th, 10th, 11th, and 12th graders in each school that were included in the data used for this analysis. Later we will see how school sizes affect performance but off-hand we can quickly see how high schools with more than 2K students perform much lower overall.
-- Total School Budget: This is the annual budget for each school in the district.
-- Per Student Budget: This is the average amount each school spends for each individual student in their high school.  This is a better indicator than the total budget since some larger schools that spend more per student may perform worse than a small school with a larger budget per student. We will look at this metric in greater detail later.
-- Average Math Score: This is the mean math score for all students in each school.
+- Total School Budget: This is the annual budget for each school in the district. A deeper analysis of this metric will be discussed later since it is difficult to determine much from the way the above table is sorted which is by school name instead of budget which will be easier to see when grouped in various bins based on the budget size.
+- Per Student Budget: This is the average amount each school spends for each individual student in their high school.  This is a better indicator than total budget since some larger schools that spend more per student may perform worse than a small school with a larger budget per student. We will look at this metric in greater detail later as well.
+- Average Math Score: This is the mean math score for all students in each school. A quick look shows that district schools average in the high end of the 70th percentile while charter schools are in the low end of the 80th percentile.
 - Average Reading Score: This is the mean of all reading scores for each school.
 - % Passing Math: This shows the percentage of the students in each school that passed the math portion of the standardized test. Any score >= 70 is considered passing.
 - % Passing Reading: This shows the percentage of the students in each school that passed the reading portion of the standardized test. Any score >= 70 is considered passing.
 - % Overall Passing: This shows the percentage of students in each school that passed both the reading and math portions of the test.
 
-
+The next 2 images show the scores for THS as before the scores were removed and after. The table above and the THS scores in the images will be referenced in this section where were compare THS to the other schools and a few key metrics for all schools.
 
 <img src="./Resources/THS_summary_before.jpeg" alt="THS Before" width="600"/>
 <img src="./Resources/THS_summary_after.jpeg" alt="THS After" width="600"/>
