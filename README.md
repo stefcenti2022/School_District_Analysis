@@ -20,12 +20,12 @@ Repeats the school district analysis and compares the results to the new analysi
 - How was the school summary affected?
 - Thomas High School's performance relative to other schools
 - Analysis of the following metrics:
-   - High and Low Performing Schools
-   - The average math score received by students in each grade level at each school
-   - The average reading score received by students in each grade level at each school
-   - School performance based on the budget per student
-   - School performance based on the school size 
-   - School performance based on the type of school
+   - Math and Reading Scores by Grade
+   - Scores by School Spending
+   - Scores by School Size
+   - Scores by School Type
+
+Following the analysist results in part 2 will be a final summary of the updated school district analysis after replacing the 9th grade scores by NaN values.
 
 ## Resources
 The following CSV files were used as input to this analysis. If modifications were needed they are indicated here:
@@ -133,13 +133,13 @@ The next 2 images show the scores for THS as before the scores were removed and 
 #### THS Scores After
 <img src="./Resources/THS_summary_after.jpeg" alt="THS After" width="600"/>
 
+As shown below, THS is the second highest performing school in the district. This result did not change even after the 9th grade scores were removed from the calculations.
+
 #### Highest Peformers
 <img src="./Resources/highest_performers.jpeg" alt="THS Before" width="600"/>
 
 #### Lowest Performers
 <img src="./Resources/lowest_performers.jpeg" alt="THS Before" width="600"/>
-
-As shown above, THS is the second highest performing school in the district. This result did not change even after the 9th grade scores were removed from the calculations.
 
 ### Additional Metrics Analyzed
 The rest of the analysis was not affected at all by removing the 9th grade scores from the entire district.  This was the case even when taking out the number of decimal to 6 places, therefore, only one image of the output will be shown for each metric.
@@ -158,6 +158,15 @@ TODO: add images and analysis
 
 ### School performance based on the type of school
 TODO: add images and analysis
+
+## Summary
+Overall, there were 4 noticable changes in the updated school district analysis after the reading and math scores were replaced with values of 'NaN'.
+
+TODO: Add the list of changes
+- 
+-
+-
+-
 
 
 
