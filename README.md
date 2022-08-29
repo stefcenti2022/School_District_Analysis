@@ -119,8 +119,13 @@ The following table shows all the schools in the district and how they performed
 - % Overall Passing: This shows the percentage of students in each school that passed both the reading and math portions of the test.
 
 ### Thomas High School's performance relative to other schools
-The next 2 images show the scores for THS as before the scores were removed and after. The differences are as follows:
-- TODO: complete this section
+The next 2 images show the scores for THS as before the scores were removed and after. Note the following:
+- Total number of students in both screen shots are identical. This was not changed so the calculations for budget and per student budget would still be correct in relation to the other schools. However, the calculations of scores for THS are based off the total number of 10th - 12th grade students since the values for 9th grade have been replaced with NaN and if they were included in the count the mean values would be much lower and inaccurate for the rest of the school which had no evidence of tampering.
+- The average math score before removal was 83.4 and after was 83.4. no significant decrease here at all once rounded to 1 decimal.
+- The average reading score before was 83.8 and after was 83.9. This is only a 0.1% decrease and as we will see later when comparing to other schools, it did not affect the overall standings for THS.
+- The percentage of students passing math before was 93.3% and 93.2. Again, only a 0.1% decrease.
+- The percentage of students passing reading before was 97.3% and 97.0%. This was a greater difference but still a relatively low decrease of 0.3%.
+- The percentage of overall students passing both math and reading also had a decrease of 0.3% mostly likely affected by the decrease in reading scores that the 9th graders previously added to the data sample.
 
 #### THS Scores Before
 <img src="./Resources/THS_summary_before.jpeg" alt="THS Before" width="600"/>
