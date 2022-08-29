@@ -133,8 +133,16 @@ The next 2 images show the scores for THS as before the scores were removed and 
 #### THS Scores After
 <img src="./Resources/THS_summary_after.jpeg" alt="THS After" width="600"/>
 
-### High and Low Performing Schools
-TODO: add images and analysis
+#### Highest Peformers
+<img src="./Resources/highest_performers.jpeg" alt="THS Before" width="600"/>
+
+#### Lowest Performers
+<img src="./Resources/lowest_performers.jpeg" alt="THS Before" width="600"/>
+
+As shown above, THS is the second highest performing school in the district. This result did not change even after the 9th grade scores were removed from the calculations.
+
+### Additional Metrics Analyzed
+The rest of the analysis was not affected at all by removing the 9th grade scores from the entire district.  This was the case even when taking out the number of decimal to 6 places, therefore, only one image of the output will be shown for each metric.
 
 ### The average math score received by students in each grade level at each school
 TODO: add images and analysis
