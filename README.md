@@ -145,19 +145,32 @@ As shown below, THS is the second highest performing school in the district. Thi
 The rest of the analysis was not affected at all by removing the 9th grade scores from the entire district.  This was the case even when taking out the number of decimal to 6 places, therefore, only one image of the output will be shown for each metric.
 
 ### Average Math Scores by Grade
+The only differnce here is in the the scores for 9th graders at THS. From this graphic we can see that all math grades have been replaced by 'NaN'. In general, it seems as if the math scores for 11th graders was slightly higher in most schools but not a significant difference to be analyzed further.
+
 <img src="./Resources/math_by_grade.jpeg" alt="Math by Grade" width="300"/>
 
 ### Average Reading Scores by Grade
+Same as with the math scores, the only differnce here is in the the scores for 9th graders at THS. From this graphic we can see that all reading grades have also been replaced by 'NaN'. There does not look as if there is a significant differnce based on grade level for reading scores. In most cases, one or two grades did better by 0.1% but overall, no particular grade level stands out over any others.
+
 <img src="./Resources/reading_by_grade.jpeg" alt="Reading by Grade" width="300"/>
 
-### School performance based on the budget per student
+### Scores by School Spending per Student
 <img src="./Resources/scores_by_spending.jpeg" alt="Scores by School Spending" width="600"/>
+Budgets were divided into 4 ranges.  The largest scores were consistently in the lowest spending range per student. It is possible that schools that spend more need to do so because the students need more help and resources but we would need to delve into a deeper analysis than required for this report to see specifically what costs are involved that make these numbers different for each school.
 
-### School performance based on the school size 
+The schools that spend the most per student faired significantly lower in passing math and in overall percentage for passing both math and reading. We will keep this in mind when reviewing the other metrics.
+
+### Scores by School Size 
 <img src="./Resources/scores_by_size.jpeg" alt="Scores by School Size" width="600"/>
+School sizes were divided into 3 ranges: <1000, 1000-1999, 2000-5000.  Between the smallest and medium school ranges there was not a significatnt difference wth test scores.  The difference between medium and large schools was significant for the percentage of students passing math.  This affected the overall performance of the largest schools significantly as well.
 
-### School performance based on the type of school
+This is another area where further analysis could benefit the performance of the district.
+
+### Scores by School Type
 <img src="./Resources/scores_by_type.jpeg" alt="Scores by School Type" width="600"/>
+School types are of type "Charter" or "District". Here, we can seet that Charter schools significantly outperform District schools in all score categories. The largest difference is in the seen in the math scores.
+
+Similar to how the math scores where significantly lower as school size increased, they are also lower in school types that are District.  If we go back to the School Summary table we saw earlier, we can quickly see that 6 out of 7 District Schools also fell into the bucket of largest schools where the performance was similar. The only large Charter School was Wilson High School had the lowest number of students out of all the schools in this range.
 
 ## Summary
 Overall, there were 4 noticable changes in the updated school district analysis after the reading and math scores were replaced with values of 'NaN'.
