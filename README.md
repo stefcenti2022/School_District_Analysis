@@ -1,26 +1,25 @@
 # Analysis of Standardized Test Scores for the PyCity School District
-This project uses a Jupyter Notebook that contains code and results for this analysis. There are 2 notebooks of interest in the repository for this project.
 
-PyCitySchools.ipynb contains the original data used to determine the performance of the schools in the PyCity School district.  Later it was suspected that the 9th grade scores at Thomas High School may have been tampered with which would have affected the original analysis. The code from this report has been refactored and is now superceded by the PyCityChallenge.ipynb file.
+After completing the first analysis, the school board notified us that there the 9th grade scores from Thomas High School (THS) may have been tampered with and asked Maria to perfore a new analysis that did not include the scores of any of the THS 9th graders.
 
-PyCityChallenge.ipynb is the latest report based on all scores except the 9th grade scores from Thomas High School.
-
-The goal of this analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this particular school year.
+The goal of this second analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this particular school year.
 
 ## Overview of Analysis
 This report contains the following information in 2 parts:
 
 ### Part 1:
-- Cleans up the student names so they do not contain any prefixes or suffixes.
+- Reviews the input data and format.
+- Reviews the clean up of the input data before performing the analysis.
 
 - Replaces the reading and math scores for the 9th graders at Thomas High School with NaN values and shows a summary of these results.
 
 ### Part 2:
-Repeats the school district analysis and contains the following information:
+Repeats the school district analysis and compares the results to the new analysis to determine how each was affected by removing the 9th grade scores from THS. The following results will be addressed in this report:
 
-- A high-level snapshot of the district's key metrics, presented in a table format
-- An overview of the key metrics for each school, presented in a table format
-- Tables presenting each of the following metrics:
+- How was the district summary affected?
+- How was the school summary affected?
+- Thomas High School's performance relative to other schools
+- Analysis of the following metrics:
    - Top 5 and bottom 5 performing schools, based on the overall passing rate
    - The average math score received by students in each grade level at each school
    - The average reading score received by students in each grade level at each school
@@ -76,7 +75,7 @@ Note that only the scores for 9th graders have been replaced.
 ## Analysis Results
 This section contains the results of the analysis of the PyCity School District for the latest standardized tests taken for every school in the district. All calculations included scores from every grade level in every school except for the 9th graders at THS.
 
-### District Results
+### How was the District Summary affected?
 The following image shows a sample of the dataset used for the district. The table includes all the metrics for each school along with the metrics for each student in those schools all in one table. This table was used as the basis for all analysis going forward in this report.
 
 <img src="./Resources/district_data_sample.jpeg" alt="District Data Sample" width="600"/>
@@ -89,7 +88,7 @@ This table shows the key metrics for the District Summary based on the sample da
 
 <img src="./Resources/district_summary_after.jpeg" alt="District Summary" width="600"/>
 
-#### Key metrics covered in the district analysis
+#### Key metrics covered in the District Summary
 - Total Schools: The total number of schools included in the analyis. For this particular analysis, every high school in the PyCity School District has been included for a total of 15 schools.
 - Total Students: The total number of students in all the high schools the district. This number includes the 9th graders from THS.
 - Total Budget: The budget for all the high schools in the district.
@@ -101,7 +100,7 @@ This table shows the key metrics for the District Summary based on the sample da
 
 Overall, there was not a significant difference to the district summary as demonstrated above when comparing before and after scores side by side. This most likely is due to THS having a lower number of students out of all the schools and that only their 9th grade scores were removed from the calculations.
 
-### Overview of Key Metrics by School
+### How was the School Summary affected?
 Here we will delve into the differences between the individual schools when compared to THS. Observations based on several metrics such as school size, type and budget are described in this section.
 
 The following table shows all the schools in the district and how they performed in relation to each other:
@@ -119,18 +118,29 @@ The following table shows all the schools in the district and how they performed
 - % Passing Reading: This shows the percentage of the students in each school that passed the reading portion of the standardized test. Any score >= 70 is considered passing.
 - % Overall Passing: This shows the percentage of students in each school that passed both the reading and math portions of the test.
 
+### Thomas High School's performance relative to other schools
 The next 2 images show the scores for THS as before the scores were removed and after. The table above and the THS scores in the images will be referenced in this section where were compare THS to the other schools and a few key metrics for all schools.
 
 <img src="./Resources/THS_summary_before.jpeg" alt="THS Before" width="600"/>
 <img src="./Resources/THS_summary_after.jpeg" alt="THS After" width="600"/>
 
-- Tables presenting each of the following metrics:
-   - Top 5 and bottom 5 performing schools, based on the overall passing rate
-   - The average math score received by students in each grade level at each school
-   - The average reading score received by students in each grade level at each school
-   - School performance based on the budget per student
-   - School performance based on the school size 
-   - School performance based on the type of school
+### Top 5 and bottom 5 performing schools, based on the overall passing rate
+TODO: add images and analysis
+
+### The average math score received by students in each grade level at each school
+TODO: add images and analysis
+
+### The average reading score received by students in each grade level at each school
+TODO: add images and analysis
+
+### School performance based on the budget per student
+TODO: add images and analysis
+
+### School performance based on the school size 
+TODO: add images and analysis
+
+### School performance based on the type of school
+TODO: add images and analysis
 
 
 
