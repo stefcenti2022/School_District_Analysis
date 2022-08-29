@@ -145,19 +145,19 @@ As shown below, THS is the second highest performing school in the district. Thi
 The rest of the analysis was not affected at all by removing the 9th grade scores from the entire district.  This was the case even when taking out the number of decimal to 6 places, therefore, only one image of the output will be shown for each metric.
 
 ### Average Math Scores by Grade
-<img src="./Resources/math_by_grade.jpeg" alt="THS Before" width="300"/>
+<img src="./Resources/math_by_grade.jpeg" alt="Math by Grade" width="300"/>
 
 ### Average Reading Scores by Grade
-<img src="./Resources/reading_by_grade.jpeg" alt="THS Before" width="300"/>
+<img src="./Resources/reading_by_grade.jpeg" alt="Reading by Grade" width="300"/>
 
 ### School performance based on the budget per student
-<img src="./Resources/scores_by_spending.jpeg" alt="THS Before" width="600"/>
+<img src="./Resources/scores_by_spending.jpeg" alt="Scores by School Spending" width="600"/>
 
 ### School performance based on the school size 
-<img src="./Resources/scores_by_size.jpeg" alt="THS Before" width="600"/>
+<img src="./Resources/scores_by_size.jpeg" alt="Scores by School Size" width="600"/>
 
 ### School performance based on the type of school
-<img src="./Resources/scores_by_type.jpeg" alt="THS Before" width="600"/>
+<img src="./Resources/scores_by_type.jpeg" alt="Scores by School Type" width="600"/>
 
 ## Summary
 Overall, there were 4 noticable changes in the updated school district analysis after the reading and math scores were replaced with values of 'NaN'.
