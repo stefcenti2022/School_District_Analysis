@@ -157,7 +157,7 @@ Same as with the math scores, the only differnce here is in the the scores for 9
 ### Scores by School Spending per Student
 <img src="./Resources/scores_by_spending.jpeg" alt="Scores by School Spending" width="600"/>
 Budgets were divided into 4 ranges.  The largest scores were consistently in the lowest spending range per student. It is possible that schools that spend more need to do so because the students need more help and resources but we would need to delve into a deeper analysis than required for this report to see specifically what costs are involved that make these numbers different for each school.
-
+<p>&nbsp;</p>
 The schools that spend the most per student faired significantly lower in passing math and in overall percentage for passing both math and reading. We will keep this in mind when reviewing the other metrics.
 
 ### Scores by School Size 
@@ -169,20 +169,22 @@ This is another area where further analysis could benefit the performance of the
 ### Scores by School Type
 <img src="./Resources/scores_by_type.jpeg" alt="Scores by School Type" width="600"/>
 School types are of type "Charter" or "District". Here, we can seet that Charter schools significantly outperform District schools in all score categories. The largest difference is in the seen in the math scores.
-
+<p>&nbsp;</p>
 Similar to how the math scores where significantly lower as school size increased, they are also lower in school types that are District.  If we go back to the School Summary table we saw earlier, we can quickly see that 6 out of 7 District Schools also fell into the bucket of largest schools where the performance was similar. The only large Charter School was Wilson High School had the lowest number of students out of all the schools in this range.
 
 ## Summary
-Overall, there were 4 noticable changes in the updated school district analysis after the reading and math scores were replaced with values of 'NaN'.
+There were 4 noticable changes in the updated school district analysis after the reading and math scores were replaced with values of 'NaN':
 
-- TODO: change 1
-- TODO: change 2
-- TODO: change 3
-- TODO: change 4
+- Before the scores were replaced, the average math score was 79.0% and after it was 78.9% This was a negligable decrease of 0.1% after removing the scores from THS.
+- The percentage of students passing math was originally 75.0%. After removing THS 9th grade scores, this value was 74.8 for a slight decrease of 0.2%.
+- Originally, the percentage of students passing reading was 85.8%. After removing the scores, this value was 85.7 for a slight decrease of 0.1%.
+- In the first analysis, the percentage of students passing both math and reading score was 65.2. For this recent analysis, the value wa 64.9 for a decrease of 0.3%.
+
+Overall, replacing the grades for 9th graders did not affect the district summary in any significant manner to warrent futher investigation.
+
+In the original analysis, there were some differences between types of schools, spending per school and school size that greatly affected math scores throughout the district that could use more analysis to help improve these scores. For the most part, district schools seem to need the most help and perhaps looking into other metrics that are different between these 2 types of schools could help make the largest improvment. Since school size is also a significant factor and most of the largest schools were district schools it may be a significant amount of change and spending that is needed in order to make up for these differences. It is recommended to compare the largest district schools with the largest charter school that managed to perform well regardless of its size.
 
 #### Final TODO Checklist:
-- Up additional metrics
-- Update Summary
 - Spell Check
 - Review and Cleanup Notebook
 - Clean up Git files and folders
