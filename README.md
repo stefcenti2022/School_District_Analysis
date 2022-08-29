@@ -183,13 +183,6 @@ Overall, replacing the grades for 9th graders did not affect the district summar
 
 In the original analysis, there were some differences between types of schools, spending per school and school size that greatly affected math scores throughout the district that could use more analysis to help improve these scores. For the most part, district schools seem to need the most help and perhaps looking into other metrics that are different between these 2 types of schools could help make the largest improvement. Since school size is also a significant factor and most of the largest schools were district schools it may be a significant amount of change and spending that is needed in order to make up for these differences. It is recommended to compare the largest district schools with the largest charter school that managed to perform well regardless of its size.
 
-#### Final TODO Checklist:
-- Spell Check
-- Review and Cleanup Notebook
-- Clean up Git files and folders
-- Resubmit for final time
-
-
 
 
 
