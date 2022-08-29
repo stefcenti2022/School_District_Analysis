@@ -144,8 +144,11 @@ As shown below, THS is the second highest performing school in the district. Thi
 ### Additional Metrics Analyzed
 The rest of the analysis was not affected at all by removing the 9th grade scores from the entire district.  This was the case even when taking out the number of decimal to 6 places, therefore, only one image of the output will be shown for each metric.
 
-### Average Math and Reading Scores by Grade
-<img src="./Resources/scores_by_grade.jpeg" alt="THS Before" width="600"/>
+### Average Math Scores by Grade
+<img src="./Resources/math_by_grade.jpeg" alt="THS Before" width="300"/>
+
+### Average Reading Scores by Grade
+<img src="./Resources/reading_by_grade.jpeg" alt="THS Before" width="300"/>
 
 ### School performance based on the budget per student
 <img src="./Resources/scores_by_spending.jpeg" alt="THS Before" width="600"/>
