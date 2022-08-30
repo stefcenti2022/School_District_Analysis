@@ -1,6 +1,6 @@
 # Analysis of Standardized Test Scores for the PyCity School District
 
-After completing the first analysis, the school board notified us that there the 9th grade scores from Thomas High School (THS) may have been tampered with and asked Maria to perform a new analysis that did not include the scores of any of the THS 9th graders.
+After completing the first analysis, the school board notified us that the 9th grade scores from Thomas High School (THS) may have been tampered with and asked Maria to perform a new analysis that did not include the scores of any of the THS 9th graders.
 
 The goal of this second analysis is two-fold. For one, we want to find out if the grades from Thomas High School affected the overall performance for the school and for the summary of the entire district.  The other goal of this analysis is to use it instead of the report containing 9th grades scores from Thomas High School since they have been determined to be invalid for this particular school year.
 
